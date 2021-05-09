@@ -8,7 +8,7 @@ public class NodeTest {
         Node node3 = new Node(20);
         Node node4 = new Node(25);
         Node node5 = new Node(30);
-
+        System.out.println(node1.getData());
     }
 
 }

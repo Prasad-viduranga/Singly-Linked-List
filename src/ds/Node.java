@@ -1,16 +1,19 @@
 package ds;
 
 public class Node {
-    
+
     private int data;
     private int next;
 
     public Node(int data, int next) {
-        this.data = data;
-        this.next = next;
+        this.setData(data);
+        this.setNext(next);
     }
-    
-    public Node(int i) {
+
+    public Node(int data) {
+        this.setData(data);
+
+
     }
 
     public void add(int num) {
