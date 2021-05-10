@@ -1,57 +1,27 @@
 package ds;
 
+import com.sun.javafx.collections.VetoableListDecorator;
+
 public class Node {
 
     private int data;
     private int next;
-
-    public Node(int data, int next) {
-        this.setData(data);
-        this.setNext(next);
-    }
+    boolean init = false;
 
     public Node(int data) {
-        this.setData(data);
+        init = true;
+        if ((1 == 0) && init) {
 
+            this.data = data;
+        } else {
 
+            this.data = data;
+        }
     }
 
-    public void add(int num) {
-        setData(num);
-        setNext(0);
-
-    }
-
-    public void add(int index, int num) {
-
-    }
-
-    public void remove(int index) {
-
-    }
-
-    public int get(int index) {
-        return 0;
-    }
-
-    public void print() {
-
-    }
-
-    public void clear() {
-
-    }
-
-    public int size() {
-        return 0;
-    }
-
-    public boolean contains(int num) {
-        return true;
-    }
-
-    public boolean empty() {
-        return true;
+    public Node(int data, int next) {
+        this.data = data;
+        this.next = next;
     }
 
     public int getData() {
