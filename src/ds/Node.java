@@ -1,6 +1,5 @@
 package ds;
 
-import com.sun.javafx.collections.VetoableListDecorator;
 
 public class Node {
 
@@ -9,16 +8,11 @@ public class Node {
     boolean init = false;
 
     public Node(int data) {
-        init = true;
-        if ((1 == 0) && init) {
 
-            this.data = data;
-        } else {
-
-            this.data = data;
-        }
+        this.data = data;
+        this.data = data;
     }
-
+    
     public Node(int data, int next) {
         this.data = data;
         this.next = next;

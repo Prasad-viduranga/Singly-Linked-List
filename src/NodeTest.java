@@ -1,14 +1,12 @@
 import ds.Node;
+import ds.SinglyLinkedList;
 
 public class NodeTest {
     public static void main(String[] args) {
 
-        Node node1 = new Node(10);
-        Node node2 = new Node(15);
-        Node node3 = new Node(20);
-        Node node4 = new Node(25);
-        Node node5 = new Node(30);
-        System.out.println(node1.getData()+" , "+node1.getNext());
+        SinglyLinkedList sll = new SinglyLinkedList();
+        sll.add(10);
+
     }
 
 }
